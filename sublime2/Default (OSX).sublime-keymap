@@ -1,0 +1,9 @@
+[
+ { "keys": ["super+shift+n"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+ { "keys": ["shift+enter"], "command": "run_macro_file", "args": {"file": "Packages/Default/Add Line.sublime-macro"} },
+ { "keys": ["super+y"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
+ { "keys": ["super+d"], "command": "duplicate_line" },
+ { "keys": ["super+w"], "command": "expand_selection", "args": {"to": "scope"} },
+ { "keys": ["super+f4"], "command": "close" },
+ { "keys": ["super+shift+r"], "command": "reveal_in_side_bar" }
+]
