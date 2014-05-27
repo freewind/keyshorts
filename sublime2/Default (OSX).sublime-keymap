@@ -5,5 +5,12 @@
  { "keys": ["super+d"], "command": "duplicate_line" },
  { "keys": ["super+w"], "command": "expand_selection", "args": {"to": "scope"} },
  { "keys": ["super+f4"], "command": "close" },
- { "keys": ["super+shift+r"], "command": "reveal_in_side_bar" }
+ { "keys": ["super+shift+r"], "command": "reveal_in_side_bar" },
+ { "keys": ["super+alt+enter"], "command": "run_macro_file", "args": {"file": "Packages/Default/Add Line Before.sublime-macro"} },
+ { "keys": ["super+alt+left"], "command": "soft_undo" },
+ { "keys": ["super+alt+right"], "command": "soft_redo" },
+ { "keys": ["super+shift+up"], "command": "swap_line_up" },
+ { "keys": ["super+shift+down"], "command": "swap_line_down" },
+ { "keys": ["super+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+ { "keys": ["super+alt+l"], "command": "reindent" , "args": { "single_line": false } }
 ]
