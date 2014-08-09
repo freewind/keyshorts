@@ -18,5 +18,6 @@
  { "keys": ["super+shift+w"], "command": "expand_selection", "args": {"to": "scope"} },
  { "keys": ["super+4"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
  { "keys": ["super+e"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
- { "keys": ["alt+f1","b"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} }
+ { "keys": ["alt+f1","b"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} },
+ { "keys": ["super+1"], "command": "focus_side_bar" }
 ]
