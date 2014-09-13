@@ -19,5 +19,15 @@
  { "keys": ["super+4"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
  { "keys": ["super+e"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
  { "keys": ["alt+f1","b"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} },
- { "keys": ["super+1"], "command": "focus_side_bar" }
+ { "keys": ["super+1"], "command": "focus_side_bar" },
+ { "keys": ["shift+f6"], "command": "quick_rename" },
+ { "keys": ["super+r"], "command": "show_panel", "args": {"panel": "replace"} },
+ { "keys": ["alt+s"], "command": "markdown_slideshow", "args": {
+ 	"theme": "freewind", 
+ 	"extensions": ["fenced_code", "tables"],
+    "browser": true,
+    "presenter": false,
+    "clean": true
+	}
+ }
 ]
