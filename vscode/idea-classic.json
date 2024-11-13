@@ -38,7 +38,7 @@
         "command": "editor.action.startFindReplaceAction"
     },
     {
-        "key": "cmd+w",
+        "key": "cmd+e",
         "command": "editor.action.smartSelect.grow",
         "when": "editorTextFocus"
     },
@@ -47,77 +47,11 @@
         "command": "workbench.action.terminal.toggleTerminal"
     },
     {
-        "key": "cmd+f4",
-        "command": "workbench.action.closeWindow",
-        "when": "!editorIsOpen"
-    },
-    {
-        "key": "cmd+f4",
-        "command": "workbench.action.closeWindow"
-    },
-    {
         "key": "cmd+shift+f12",
         "command": "workbench.action.maximizeEditorHideSidebar"
     },
     {
-        "key": "shift+cmd+p",
-        "command": "-workbench.action.showCommands"
-    },
-    {
-        "key": "cmd+f4",
-        "command": "workbench.action.closeWindow",
-        "when": "!editorIsOpen && !multipleEditorGroups"
-    },
-    {
-        "key": "cmd+w",
-        "command": "-workbench.action.closeWindow",
-        "when": "!editorIsOpen && !multipleEditorGroups"
-    },
-    {
-        "key": "cmd+f4",
-        "command": "workbench.action.closeActiveEditor"
-    },
-    {
-        "key": "cmd+w",
-        "command": "-workbench.action.closeActiveEditor"
-    },
-    {
-        "key": "cmd+f4",
-        "command": "workbench.action.closeGroup",
-        "when": "activeEditorGroupEmpty && multipleEditorGroups"
-    },
-    {
-        "key": "cmd+w",
-        "command": "-workbench.action.closeGroup",
-        "when": "activeEditorGroupEmpty && multipleEditorGroups"
-    },
-    {
-        "key": "cmd+f4",
-        "command": "workbench.action.terminal.killEditor",
-        "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated && resourceScheme == 'vscode-terminal' || terminalEditorFocus && terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
-    },
-    {
-        "key": "cmd+w",
-        "command": "-workbench.action.terminal.killEditor",
-        "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated && resourceScheme == 'vscode-terminal' || terminalEditorFocus && terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
-    },
-    {
-        "key": "ctrl+shift+right",
-        "command": "-editor.action.smartSelect.expand",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "cmd+w",
-        "command": "editor.action.smartSelect.expand",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+cmd+right",
-        "command": "-editor.action.smartSelect.expand",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+cmd+w",
+        "key": "shift+cmd+e",
         "command": "editor.action.smartSelect.shrink",
         "when": "editorTextFocus"
     },
@@ -134,14 +68,6 @@
     {
         "key": "shift+cmd+n",
         "command": "-workbench.action.newWindow"
-    },
-    {
-        "key": "shift+cmd+a",
-        "command": "workbench.action.showCommands"
-    },
-    {
-        "key": "f1",
-        "command": "-workbench.action.showCommands"
     },
     {
         "key": "ctrl+shift+f",
@@ -444,5 +370,53 @@
         "key": "alt+cmd+e",
         "command": "-copy-file-name.copyFileNameWithExtension",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+c",
+        "command": "-mssql.connect",
+        "when": "editorTextFocus && editorLangId == 'sql'"
+    },
+    {
+        "key": "shift+cmd+c",
+        "command": "-workbench.action.terminal.openNativeConsole",
+        "when": "!terminalFocus"
+    },
+    {
+        "key": "shift+alt+s",
+        "command": "git.stageSelectedRanges",
+        "when": "isInDiffEditor && !operationInProgress"
+    },
+    {
+        "key": "cmd+k alt+cmd+s",
+        "command": "-git.stageSelectedRanges",
+        "when": "isInDiffEditor && !operationInProgress"
+    },
+    {
+        "key": "ctrl+shift+s",
+        "command": "-markdown-preview-enhanced.syncPreview",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "alt+\\",
+        "command": "editor.action.inlineSuggest.trigger"
+    },
+    {
+        "key": "cmd+e",
+        "command": "editor.action.smartSelect.expand",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+right",
+        "command": "-editor.action.smartSelect.expand",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+p",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "shift+cmd+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
     }
 ]
